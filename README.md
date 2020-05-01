@@ -1,6 +1,6 @@
-# golang fundamentals (https://tour.golang.org/)
+# Go fundamentals (https://tour.golang.org)
 
-## Installation (Win10)
+## Installation (Windows 10)
 
 ```powershell
 choco install -y golang
@@ -32,7 +32,7 @@ Best practice is:
 
 When Go compiles and installs tools, it will put them in the $GOPATH/bin directory. 
 
-## Run Hello World
+## Run the Hello World Go script
 
 ```powershell
 go run 01_hello.go
