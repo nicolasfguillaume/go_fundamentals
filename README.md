@@ -1,4 +1,4 @@
-# golang fundamentals
+# golang fundamentals (https://tour.golang.org/)
 
 ## Installation (Win10)
 
