@@ -1,6 +1,10 @@
-# Go fundamentals (https://tour.golang.org)
+# golang fundamentals
 
-## Installation (Windows 10)
+## Advantages/drawbacks of Go vs Python
+
+See https://getstream.io/blog/switched-python-go/
+
+## Installation (Win10)
 
 ```powershell
 choco install -y golang
@@ -32,8 +36,19 @@ Best practice is:
 
 When Go compiles and installs tools, it will put them in the $GOPATH/bin directory. 
 
-## Run the Hello World Go script
+## Run Hello World
 
 ```powershell
 go run 01_hello.go
 ```
+
+Built-in linter:
+```powershell
+gofmt -w 01_hello.go
+```
+
+Convert Go to C code (C shared library):
+```
+go build -buildmode=c-shared -o 01_hello.so 01_hello.go
+```
+This creates 2 files, 01_hello.h and 01_hello.so. The 01_hello.so file is the compiled binary and 01_hello.h is the header to describe what methods and types are defined within the binary. Then the shared library can be imported in C or Python...
